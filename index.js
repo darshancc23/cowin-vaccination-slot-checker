@@ -60,9 +60,9 @@ client.once('ready', () => {
         .setTitle(':syringe: Vaccination Available')
         .setColor('#43b581')
         .addFields(
-          { name: 'Name', value: el.name },
-          { name: 'Pincode', value: el.pincode },
-          { name: 'Fee', value: el.fee_type }
+          { name: 'Name', value: el.name ? el.name : 'Name' },
+          { name: 'Pincode', value: el.pincode ? el.pincode : 'Pincode' },
+          { name: 'Fee', value: el.fee_type ? el.fee_type : 'Fee' }
         )
       el.sessions.map(el => {
         embed.addField(dayjs(el.date, 'DD-MM-YYYY').format('MMM DD'), el.available_capacity, true)
