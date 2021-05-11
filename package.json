@@ -1,0 +1,17 @@
+{
+  "name": "cowin-vaccination-slot-checker",
+  "version": "1.0.0",
+  "description": "A simple script to check the availability of vaccination slots on Co-WIN.",
+  "main": "index.js",
+  "repository": "https://github.com/darshancc23/cowin-vaccination-slot-checker.git",
+  "author": "C C Darshan Thimmaiah",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
+    "discord.js": "^12.5.3",
+    "dotenv": "^9.0.2"
+  }
+}
