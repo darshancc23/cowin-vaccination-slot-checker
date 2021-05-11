@@ -24,7 +24,7 @@ const config = {
 const filterSessions = center => {
   const filteredSessionsArray = [];
   center.sessions.map((el) => {
-    if(el.available_capacity > 0 && el.min_age_limit === 45) {
+    if(el.available_capacity > 0 && el.min_age_limit === 18) {
       filteredSessionsArray.push(el);
     }
   });
@@ -69,6 +69,6 @@ client.once('ready', () => {
       });
       channel.send(embed);
     })
-  }, 60000 * 3)
+  }, 60000 * 5)
 });
 client.login(process.env.DISCORD_BOT_TOKEN);
